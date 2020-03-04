@@ -1,0 +1,251 @@
+html {box-sizing: border-box;}
+*,*::after,*::before {box-sizing: inherit;}
+ul {list-style-type: none;}
+
+/* eliminate underlines on links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --colorA: #79f307;
+    --colorAlight: #c0f78c;
+    --colorB: #f30799;
+    --colorBlight:#ffd5ee;
+    --colorBdark: #5a0238;
+    --colorAdark:#3a6e09;
+    --colorC: #3f1212;
+}
+
+/* REFERENCE ONLY: FONT FAMILY NAMES
+font-family: 'Spirax', ;
+font-family: 'Princess Sofia', ;
+font-family: 'Lovers Quarrel', ;
+font-family: 'Lancelot', ;
+*/
+
+
+
+/* Section containers */
+.topmost {
+    position: relative;
+    background: url(/images/pawprints-small.png); 
+    height: 55px;
+    /* max-width: 100%; */
+ 
+    float: left;
+
+}
+
+.customerContainer {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url(/images/pawprintsPink-small.png);
+    margin-bottom: 20px;
+}
+
+.itemContainer {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url(/images/pawprints-small.png);
+
+}
+
+
+.footer {
+    margin: 0, auto;
+}
+
+
+/* Smaller containers within each section */
+
+.top-icons {
+    /* font-size: 2em; */
+    color: white;
+    float: right;
+    top: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: var(--colorAdark);
+    padding: 5px;
+    
+}
+
+.top-slogan {
+    position: absolute;
+    font-size: 36px;
+    color: white;;
+    font-family: 'Lancelot';
+    margin-right: 10px;
+    padding-right: 15px;
+    top: -25px;
+    left: 20px;
+    text-shadow: 2px 2px var(--colorBdark);
+    padding-left: 20px;
+}
+
+.top-slogan span {
+    color: var(--colorAdark);
+}
+
+/* add herowrapper CSS */
+
+.hero {
+    /* font-family: 'Lovers Quarrel';
+    font-size: 3em; */
+    width: 1600px;
+    height: 500px;
+
+    /* float: left; */
+    border: 30px solid var(--colorAdark);
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Customers section */
+
+.customerHead {
+    font-family: 'Princess Sofia';
+    font-size: 24px;
+    float: left;
+    width: 100px;
+    color: var(--colorA);
+    text-shadow: 2px 0.5px var(--colorAdark);
+}
+
+
+
+
+.customerBox {
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap; */
+    width: 250px;
+    height: 150px;
+    /* border: 3px solid var(--colorB); */
+    margin: 15px;
+    
+}
+
+.customerBox img {
+    width: 144px;
+    height: 144px;
+    float: left;
+    border-radius: 50%;
+    border: 6px dotted var(--colorA);
+}
+
+.customerName {
+    width: 100px;
+    font-family: 'Princess Sofia';
+    color: var(--colorB);
+    text-shadow: 2px 0.5px var(--colorBdark);
+    font-size: 24px;
+    float: right;
+}
+
+/* Items section */
+
+
+.itemBox {
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap; */
+    width: 300px;
+    height: 300px;
+    border: 3px solid var(--colorB);
+    margin: 15px;
+    background-color: var(--colorBlight);
+}
+
+.itemName {
+    position: absolute;
+    bottom: 0; 
+    color:var(--colorB);
+    padding-left: 5px;
+    font-family: 'Princess Sofia';
+    font-size: 40px;
+    float: left;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-shadow: 2px 0.5px var(--colorBdark);
+}
+.itemDescription {
+    height:94px;
+    width: 294px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: 'Lancelot';
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     
+}
+
+.itemBox img {
+    width: 294px;
+    height: 200px;
+    float: left;
+    background-color: var(--colorAlight);
+}
+
+
+
+.social {
+    font-size: 2em;
+}
+
+
+
+.customerBox img {
+    max-width: 100%;
+}
+
+/* Overlay with social sharing options  for item-wrapper */
+
+.dealOverlay {
+opacity: 1;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background: pink;
+color: black;
+padding: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: .75em;
+}
+
+.item-wrapper:hover .dealOverlay {
+opacity: 1;
+transition: all 400ms ease;
+}
+
+
+
+
+.bottom-icons {
+    color: var(--colorB);
+    top: 0;
+    margin-right: 20px;
+    
+}
